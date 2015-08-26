@@ -18,5 +18,7 @@ namespace AcmeCursos.DAL
         public DbSet<Curso> Cursos { get; set; }
 
         public DbSet<Inscricao> Inscricaos { get; set; }
+
+        public DbSet<Professor> Professor { get; set; }
     }
 }
