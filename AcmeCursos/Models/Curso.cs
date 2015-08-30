@@ -12,6 +12,10 @@ namespace AcmeCursos.Models
     {
 
         public int Id { get; set; }
+
+        [Display(Name = "Professor")]
+        public string[] ProfessorId { get; set; }
+
         [Required]
         [StringLength(15, MinimumLength = 3)]
         public string Nome { get; set; }
@@ -25,5 +29,10 @@ namespace AcmeCursos.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataLimiteInscricao { get; set; }
+
+        [UIHint("_CursoProfessores")]
+        public virtual ICollection<CursoProfessor> CursoProfessor { get; set; }
+
+       //public virtual Professor Professor { get; set; }
     }
 }

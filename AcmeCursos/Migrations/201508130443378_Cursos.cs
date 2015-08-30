@@ -12,6 +12,7 @@ namespace AcmeCursos.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        ProfessorId = c.Int(nullable: false),
                         Nome = c.String(nullable: false, maxLength: 15),
                         Descricao = c.String(maxLength: 250),
                         DataLimiteInscricao = c.DateTime(nullable: false),
