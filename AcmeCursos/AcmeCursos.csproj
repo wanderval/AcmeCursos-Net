@@ -210,6 +210,10 @@
     <Compile Include="Migrations\201508292047488_InsertPartialsTemplate.Designer.cs">
       <DependentUpon>201508292047488_InsertPartialsTemplate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508302035095_InsertPartialsTemplateProfessor.cs" />
+    <Compile Include="Migrations\201508302035095_InsertPartialsTemplateProfessor.Designer.cs">
+      <DependentUpon>201508302035095_InsertPartialsTemplateProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Curso.cs" />
@@ -297,6 +301,7 @@
     <Content Include="Views\Professor\Edit.cshtml" />
     <Content Include="Views\Professor\Index.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\_CursoProfessores.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\_ProfessorCursos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201508292047488_InsertPartialsTemplate.resx">
       <DependentUpon>201508292047488_InsertPartialsTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508302035095_InsertPartialsTemplateProfessor.resx">
+      <DependentUpon>201508302035095_InsertPartialsTemplateProfessor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

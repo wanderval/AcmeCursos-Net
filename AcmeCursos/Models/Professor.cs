@@ -27,7 +27,8 @@ namespace AcmeCursos.Models
         [Display(Name = "Titulação")]
         public string Titulacao { get; set; }
 
-
+        [UIHint("_ProfessorCursos")]
+        public virtual ICollection<CursoProfessor> ProfessorCursos { get; set; }
 
 
     }

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AcmeCursos.Models.CursoProfessor>
+
+<table class="table">
+    <tr>
+        <th>
+            Cursos ministrados
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr id="@Html.DisplayFor(modelItem => item.Curso.Id)">
+            <td>
+                @Html.DisplayFor(modelItem => item.Curso.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Curso.Descricao)
+            </td>
+        </tr>
+    }
+
+</table>
+
